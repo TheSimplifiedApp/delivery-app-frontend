@@ -6,6 +6,7 @@ import UserProfilePage from './pages/UserProfilePage'
 import ProtectedRoute from './auth/ProtectedRoute'
 
 const AppRoutes = () => {
+  console.log(import.meta.env.MODE)
   return (
     <Routes>
       <Route path='/' element={<Layout showHero><HomePage /></Layout>} />
